@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Video Recorder</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+  </head>
+  <body class="container">
+    <div
+      class="is-flex-direction-column is-justify-content-center is-align-content-center"
+    >
+      <video id="video"></video>
+      <div class="stl">
+        <button class="button is-primary" id="startBtn">Start</button>
+        <button class="button is-warning" id="stopBtn">Stop</button>
+      </div>
+    </div>
+
+    <hr />
+    <div class="stl">
+      <button id="windowSelect" class="button is-text">
+        Choose Video Source
+      </button>
+    </div>
+    <script defer src="./render.js"></script>
+  </body>
+</html>
